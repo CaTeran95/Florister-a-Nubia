@@ -1,0 +1,15 @@
+
+
+body {
+    width: 100vw;
+}
+
+.bgImg {
+    height: 100vh;
+    /* width: 100%; */
+    margin: 0 auto;
+}
+
+.homeBanner {
+    background-color: antiquewhite;
+}

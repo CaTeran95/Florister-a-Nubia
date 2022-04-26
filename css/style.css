@@ -1,0 +1,1390 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.credits {
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ad4881;
+}
+
+.credits p {
+  margin: auto;
+  font-size: 0.75rem;
+  color: #ffffff;
+}
+
+.homeBanner {
+  background-blend-mode: multiply;
+  height: 100vh;
+  padding: 10vw 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homeBanner header {
+  padding: 0.5rem;
+  background-color: #ffffffa0;
+  border-radius: 1rem 1rem 0 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeBanner header i {
+  font-size: 2rem;
+}
+
+.homeBanner header .homeLogo {
+  width: 50vw;
+  border-radius: 5px;
+}
+
+.homeBanner header .menuButton,
+.homeBanner header .userButton {
+  display: none;
+}
+
+.homeBanner header .menuButton:checked ~ .menuSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homeBanner header .userButton:checked ~ .userSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homeBanner header .menuSection,
+.homeBanner header .userSection {
+  width: 90vw;
+  padding: 2rem 0;
+  border-radius: 0 0 1rem 1rem;
+  background: #ffffffa0;
+  display: none;
+  font-size: 1.25rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.homeBanner header .menuSection ul,
+.homeBanner header .userSection ul {
+  padding: 1rem 0;
+  list-style: none;
+}
+
+.homeBanner header .menuSection ul a,
+.homeBanner header .userSection ul a {
+  text-decoration: none;
+}
+
+.homeBanner header .menuSection ul li,
+.homeBanner header .userSection ul li {
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+}
+
+.homeBanner header .menuSection .searchBox,
+.homeBanner header .userSection .searchBox {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeBanner header .menuSection .searchBox input,
+.homeBanner header .userSection .searchBox input {
+  width: 100%;
+  line-height: 2;
+  padding: 0 0.5rem;
+  border: 1px solid #aaaaaa;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.homeBanner header .menuSection .searchBox i,
+.homeBanner header .userSection .searchBox i {
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  position: absolute;
+  right: 0;
+}
+
+.homeBanner header .userSection {
+  display: none;
+}
+
+.homeBanner header .userSection .userPicture {
+  margin: 1rem;
+  width: 25vw;
+  border-radius: 25%;
+}
+
+.homeBanner .bannerTitle {
+  background-color: #ffffffa0;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.homeBanner .bannerTitle h1 {
+  font-size: 2rem;
+}
+
+.homeBanner .bannerTitle p {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.homeBanner.index {
+  background-image: url(../../assets/img/MOVhomeBackground.jpg);
+}
+
+.homeBanner.catalog {
+  background-image: url(../../assets/img/MOVcatalogBackground.jpg);
+}
+
+.homeBanner.courses {
+  background-image: url(../../assets/img/MOVcoursesBackground.jpg);
+}
+
+.homeBanner.services {
+  background-image: url(../../assets/img/MOVservicesBackground.jpg);
+}
+
+.homeBanner.forum {
+  background-image: url(../../assets/img/MOVforumBackground.jpg);
+}
+
+@media (min-width: 1024px) {
+  .homeBanner {
+    padding: 3rem 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .homeBanner header {
+    padding: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homeBanner header .homeLogo {
+    width: 200px;
+  }
+  .homeBanner header .menuButtonLabel {
+    display: none;
+  }
+  .homeBanner header nav {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .homeBanner header nav .menuSection {
+    background: none;
+    width: auto;
+    padding: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .homeBanner header nav .menuSection .searchBox {
+    margin-left: 5vw;
+    width: 300px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .homeBanner header nav .menuSection .searchBox input {
+    text-align: left;
+    font-size: 1.25rem;
+  }
+  .homeBanner header nav .menuSection .menuList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0.5rem;
+  }
+  .homeBanner header nav .menuSection .menuList li {
+    font-weight: 700;
+    border-radius: 1rem;
+  }
+  .homeBanner header nav .menuSection .menuList li a {
+    color: #000;
+    font-size: 2rem;
+  }
+  .homeBanner header nav .menuSection .closeButtonLabel {
+    display: none;
+  }
+  .homeBanner header .userOptions {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .homeBanner header .userOptions .userSection {
+    padding: 0;
+    width: 400px;
+    height: 182px;
+    border-radius: 0 0 1rem 1rem;
+    left: auto;
+    right: 0;
+    display: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .homeBanner header .userOptions .userSection .userPicture {
+    width: 150px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .homeBanner header .userOptions .userSection .userList li {
+    text-align: left;
+    font-weight: bold;
+  }
+  .homeBanner .bannerTitle {
+    width: 40vw;
+    position: absolute;
+    top: 50%;
+    text-align: left;
+  }
+  .homeBanner .bannerTitle h1 {
+    font-size: 4rem;
+  }
+  .homeBanner .bannerTitle p {
+    font-size: 2.5rem;
+  }
+  .homeBanner.index {
+    background-image: url(../../assets/img/homeBackground2.jpg);
+  }
+  .homeBanner.catalog {
+    background-image: url(../../assets/img/catalogBackground3.jpg);
+  }
+  .homeBanner.courses {
+    background-image: url(../../assets/img/coursesBackground.jpg);
+  }
+  .homeBanner.services {
+    background-image: url(../../assets/img/servicesBackground.jpg);
+  }
+  .homeBanner.forum {
+    background-image: url(../../assets/img/forumBackground.jpg);
+  }
+}
+
+.catalogFilter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.catalogFilter input[type="checkbox"] {
+  display: none;
+}
+
+.catalogFilter .showButton:checked ~ .lateralList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalogFilter .lateralList {
+  width: 100%;
+  padding: 1rem;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.catalogFilter .lateralList [class$="Filter"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.75rem;
+}
+
+.catalogFilter .lateralList a {
+  all: unset;
+  font-size: 1.15rem;
+}
+
+.catalogFilter .lateralList [class*="Category"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalogFilter .lateralList .hidden {
+  display: none;
+}
+
+.catalogFilter .lateralList .seeMore:checked ~ .colors .hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalogFilter .lateralList .seeMore:checked ~ label {
+  display: none;
+}
+
+.catalogFilter .lateralList .inputRange {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalogFilter .lateralList .inputRange input {
+  padding-left: 1rem;
+  width: 40%;
+}
+
+@media (min-width: 1024px) {
+  .catalogFilter {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .catalogFilter .lateralList {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .catalogFilter .lateralList h3 {
+    font-size: 2.25rem;
+  }
+  .catalogFilter .lateralList a, .catalogFilter .lateralList input {
+    font-size: 2rem;
+    border-radius: 2rem;
+  }
+  .catalogFilter .lateralList .categoryFilter,
+  .catalogFilter .lateralList .colorFilter,
+  .catalogFilter .lateralList .priceFilter {
+    width: 30%;
+  }
+}
+
+.catalogSection {
+  padding: 10vw 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalogSection h2 {
+  text-align: center;
+}
+
+.catalogSection .homeProducts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.catalogSection .homeProducts .productCard {
+  min-width: MAX(90vw, 320px);
+  padding: 5px;
+  background-color: #ffe6f4;
+  border-radius: 8px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 120px auto 20px;
+      grid-template-columns: 120px auto 20px;
+  -ms-grid-rows: 70px 25px 25px;
+      grid-template-rows: 70px 25px 25px;
+      grid-template-areas: "img productTitle productFavourites" "img productPrice productPrice" "img productCalification productCart";
+}
+
+.catalogSection .homeProducts .productCard img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.catalogSection .homeProducts .productCard i {
+  font-size: 1.25rem;
+}
+
+.catalogSection .homeProducts .productCard .productTitle,
+.catalogSection .homeProducts .productCard .productPrice,
+.catalogSection .homeProducts .productCard .productCalification,
+.catalogSection .homeProducts .productCard .productFavourites,
+.catalogSection .homeProducts .productCard .productCart {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.catalogSection .homeProducts .productCard .productTitle,
+.catalogSection .homeProducts .productCard .productPrice,
+.catalogSection .homeProducts .productCard .productCalification {
+  padding: 0 5px;
+}
+
+.catalogSection .homeProducts .productCard .productTitle {
+  font-size: 1rem;
+}
+
+.catalogSection .homeProducts .productCard .productFavourites {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.catalogSection .homeProducts .productCard .productCart {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.catalogSection .homeProducts .productCard .img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: img;
+}
+
+.catalogSection .homeProducts .productCard .productTitle {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: productTitle;
+}
+
+.catalogSection .homeProducts .productCard .productFavourites {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: productFavourites;
+}
+
+.catalogSection .homeProducts .productCard .productPrice {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: productPrice;
+}
+
+.catalogSection .homeProducts .productCard .productCalification {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: productCalification;
+}
+
+.catalogSection .homeProducts .productCard .productCart {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: productCart;
+}
+
+.catalogSection .homeProducts .checkboxPage1,
+.catalogSection .homeProducts .checkboxPage2,
+.catalogSection .homeProducts .checkboxPage3,
+.catalogSection .homeProducts .checkboxPage4,
+.catalogSection .homeProducts .checkboxPage5,
+.catalogSection .homeProducts .checkboxPage6 {
+  display: none;
+}
+
+.catalogSection .homeProducts .page1,
+.catalogSection .homeProducts .page2,
+.catalogSection .homeProducts .page3,
+.catalogSection .homeProducts .page4,
+.catalogSection .homeProducts .page5,
+.catalogSection .homeProducts .page6 {
+  display: none;
+}
+
+.catalogSection .homeProducts .checkboxPage1:checked ~ .page1 {
+  display: -ms-grid;
+  display: grid;
+}
+
+.catalogSection .homeProducts .checkboxPage2:checked ~ .page2 {
+  display: -ms-grid;
+  display: grid;
+}
+
+.catalogSection .homeProducts .checkboxPage3:checked ~ .page3 {
+  display: -ms-grid;
+  display: grid;
+}
+
+.catalogSection .homeProducts .checkboxPage4:checked ~ .page4 {
+  display: -ms-grid;
+  display: grid;
+}
+
+.catalogSection .homeProducts .checkboxPage5:checked ~ .page5 {
+  display: -ms-grid;
+  display: grid;
+}
+
+.catalogSection .homeProducts .checkboxPage6:checked ~ .page6 {
+  display: -ms-grid;
+  display: grid;
+}
+
+.catalogSection .popularTags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalogSection .popularTags p {
+  text-align: center;
+}
+
+.catalogSection a {
+  padding: 0.5rem 1rem;
+  background-color: #f394ca;
+  color: #ffffff;
+  font-weight: 00;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+.catalogSection a:hover {
+  background-color: #ad4881;
+}
+
+@media (min-width: 1024px) {
+  .catalogSection {
+    padding: 3rem 5rem;
+  }
+  .catalogSection .sectionTitle {
+    font-size: 3rem;
+  }
+  .catalogSection .popularTags p {
+    font-size: 2rem;
+  }
+  .catalogSection .homeProducts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .catalogSection .homeProducts .productCard {
+    padding: 10px;
+    min-width: auto;
+    width: 30%;
+    max-width: 350px;
+    -ms-grid-columns: auto 20px;
+        grid-template-columns: auto 20px;
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "img img" "productTitle productFavourites" "productPrice productPrice" "productCalification productCart";
+  }
+  .catalogSection .homeProducts .productCard img {
+    width: 100%;
+  }
+  .catalogSection .homeProducts .productCard .productTitle,
+  .catalogSection .homeProducts .productCard .productFavourites,
+  .catalogSection .homeProducts .productCard .productSubtitle,
+  .catalogSection .homeProducts .productCard .productPrice,
+  .catalogSection .homeProducts .productCard .productCalification,
+  .catalogSection .homeProducts .productCard .productCart {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  .catalogSection .homeProducts .productCard .img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: img;
+  }
+  .catalogSection .homeProducts .productCard .productTitle {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: productTitle;
+  }
+  .catalogSection .homeProducts .productCard .productFavourites {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: productFavourites;
+  }
+  .catalogSection .homeProducts .productCard .productPrice {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: productPrice;
+  }
+  .catalogSection .homeProducts .productCard .productCalification {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: productCalification;
+  }
+  .catalogSection .homeProducts .productCard .productCart {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: productCart;
+  }
+  .catalogSection a {
+    font-size: 2rem;
+    border-radius: 2rem;
+  }
+  .catalogSection .productsPages {
+    font-size: 3rem;
+  }
+}
+
+.ourCourses,
+.ourCompany,
+.contactForm,
+.serviceCard,
+.courseCard {
+  padding: 10vw 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ourCourses .sectionTitle,
+.ourCompany .sectionTitle,
+.contactForm .sectionTitle,
+.serviceCard .sectionTitle,
+.courseCard .sectionTitle {
+  text-align: center;
+}
+
+.ourCourses .mediaLandscape,
+.ourCompany .mediaLandscape,
+.contactForm .mediaLandscape,
+.serviceCard .mediaLandscape,
+.courseCard .mediaLandscape {
+  height: MAX(180px, 50vw);
+  width: MAX(320px, 100%);
+}
+
+.ourCourses .mediaSquare,
+.ourCompany .mediaSquare,
+.contactForm .mediaSquare,
+.serviceCard .mediaSquare,
+.courseCard .mediaSquare {
+  width: 100%;
+}
+
+.ourCourses .mediaSectionText,
+.ourCompany .mediaSectionText,
+.contactForm .mediaSectionText,
+.serviceCard .mediaSectionText,
+.courseCard .mediaSectionText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ourCourses .mediaSectionText .mediaTitle,
+.ourCompany .mediaSectionText .mediaTitle,
+.contactForm .mediaSectionText .mediaTitle,
+.serviceCard .mediaSectionText .mediaTitle,
+.courseCard .mediaSectionText .mediaTitle {
+  font-size: 2rem;
+  line-height: 0.9;
+  padding-bottom: 1rem;
+}
+
+.ourCourses .mediaSectionText .mediaSubtitle,
+.ourCompany .mediaSectionText .mediaSubtitle,
+.contactForm .mediaSectionText .mediaSubtitle,
+.serviceCard .mediaSectionText .mediaSubtitle,
+.courseCard .mediaSectionText .mediaSubtitle {
+  font-size: 1.5rem;
+  line-height: 0.9;
+  padding-bottom: 1rem;
+}
+
+.ourCourses .mediaSectionText .mediaParagraph,
+.ourCompany .mediaSectionText .mediaParagraph,
+.contactForm .mediaSectionText .mediaParagraph,
+.serviceCard .mediaSectionText .mediaParagraph,
+.courseCard .mediaSectionText .mediaParagraph {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.ourCourses a,
+.ourCompany a,
+.contactForm a,
+.serviceCard a,
+.courseCard a {
+  padding: 0.5rem 1rem;
+  background-color: #f394ca;
+  color: #ffffff;
+  font-size: 1.25rem;
+  border-radius: 1.75rem;
+  text-decoration: none;
+}
+
+.ourCourses a:hover,
+.ourCompany a:hover,
+.contactForm a:hover,
+.serviceCard a:hover,
+.courseCard a:hover {
+  background-color: #ad4881;
+}
+
+@media (min-width: 1024px) {
+  .ourCourses,
+  .ourCompany,
+  .contactForm,
+  .serviceCard,
+  .courseCard {
+    padding: 3rem 5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 3vw auto 2.25rem;
+        grid-template-rows: 3vw auto 2.25rem;
+    -ms-grid-columns: 42vw auto;
+        grid-template-columns: 42vw auto;
+        grid-template-areas: "sectionTitle sectionTitle" "mediaLandscape mediaSectionText" "mediaLandscape button";
+    row-gap: 2rem;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+  }
+  .ourCourses .sectionTitle,
+  .ourCompany .sectionTitle,
+  .contactForm .sectionTitle,
+  .serviceCard .sectionTitle,
+  .courseCard .sectionTitle {
+    width: 100%;
+    font-size: 3rem;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: sectionTitle;
+  }
+  .ourCourses .mediaLandscape,
+  .ourCompany .mediaLandscape,
+  .contactForm .mediaLandscape,
+  .serviceCard .mediaLandscape,
+  .courseCard .mediaLandscape {
+    height: MIN(23.625vw, 455.625px);
+    width: MIN(42vw, 810px);
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: mediaLandscape;
+  }
+  .ourCourses .mediaSectionText,
+  .ourCompany .mediaSectionText,
+  .contactForm .mediaSectionText,
+  .serviceCard .mediaSectionText,
+  .courseCard .mediaSectionText {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: mediaSectionText;
+  }
+  .ourCourses .mediaSectionText .mediaTitle,
+  .ourCompany .mediaSectionText .mediaTitle,
+  .contactForm .mediaSectionText .mediaTitle,
+  .serviceCard .mediaSectionText .mediaTitle,
+  .courseCard .mediaSectionText .mediaTitle {
+    font-size: 2.5rem;
+  }
+  .ourCourses .mediaSectionText .mediaSubtitle,
+  .ourCompany .mediaSectionText .mediaSubtitle,
+  .contactForm .mediaSectionText .mediaSubtitle,
+  .serviceCard .mediaSectionText .mediaSubtitle,
+  .courseCard .mediaSectionText .mediaSubtitle {
+    font-size: 2rem;
+  }
+  .ourCourses .mediaSectionText .mediaParagraph,
+  .ourCompany .mediaSectionText .mediaParagraph,
+  .contactForm .mediaSectionText .mediaParagraph,
+  .serviceCard .mediaSectionText .mediaParagraph,
+  .courseCard .mediaSectionText .mediaParagraph {
+    font-size: 1.75rem;
+  }
+  .ourCourses .Button,
+  .ourCompany .Button,
+  .contactForm .Button,
+  .serviceCard .Button,
+  .courseCard .Button {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: button;
+    justify-self: flex-start;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .serviceCard {
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-rows: auto 2.25rem;
+        grid-template-rows: auto 2.25rem;
+    -ms-grid-columns: 25rem auto;
+        grid-template-columns: 25rem auto;
+        grid-template-areas: "mediaSquare mediaSectionText" "mediaSquare button";
+  }
+  .serviceCard .mediaSquare {
+    width: 25rem;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: mediaSquare;
+  }
+  .serviceCard .mediaSectionText {
+    max-width: 1000px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: mediaSectionText;
+  }
+  .serviceCard .mediaSectionText .mediaTitle,
+  .serviceCard .mediaSectionText .mediaSubtitle,
+  .serviceCard .mediaSectionText .mediaParagraph {
+    line-height: 1.25;
+  }
+  .serviceCard .mediaSectionText .mediaTitle {
+    font-size: 4rem;
+  }
+  .serviceCard .mediaSectionText .mediaSubtitle {
+    font-size: 2.5rem;
+  }
+  .serviceCard .mediaSectionText .mediaParagraph {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .serviceCard .button {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: button;
+  }
+}
+
+@media (min-width: 1024px) {
+  .courseCard {
+    -ms-grid-rows: auto 2.25rem;
+        grid-template-rows: auto 2.25rem;
+    -ms-grid-columns: 42vw auto;
+        grid-template-columns: 42vw auto;
+        grid-template-areas: "mediaLandscape mediaSectionText" "mediaLandscape button";
+  }
+  .courseCard .mediaLandscape {
+    height: MIN(23.625vw, 455.625px);
+    width: MIN(42vw, 810px);
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: mediaLandscape;
+  }
+  .courseCard .mediaSectionText {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: mediaSectionText;
+  }
+  .courseCard .Button {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: button;
+    justify-self: flex-start;
+    text-align: center;
+  }
+}
+
+.forumTopics {
+  padding: 10vw 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.forumTopics .topicCard {
+  padding: 1rem;
+  background-color: #ffe6f4;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.forumTopics .topicCard img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.forumTopics .topicCard .topicSectionText .sectionTitle {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.forumTopics .topicCard .topicSectionText .sectionSubtitle,
+.forumTopics .topicCard .topicSectionText .sectionParagraph {
+  display: none;
+}
+
+.forumTopics .topicCard a {
+  padding: 0 1rem;
+  text-decoration: none;
+  line-height: 2;
+  background-color: #f394ca;
+  color: #ffffff;
+  border-radius: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .forumTopics {
+    padding: 3rem 5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .forumTopics .topicCard {
+    width: 32%;
+  }
+  .forumTopics .topicCard .topicSectionText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .forumTopics .topicCard .topicSectionText .sectionSubtitle,
+  .forumTopics .topicCard .topicSectionText .sectionParagraph {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    text-align: center;
+  }
+  .forumTopics .topicCard .topicSectionText .sectionTitle {
+    font-size: 3rem;
+  }
+  .forumTopics .topicCard .topicSectionText .sectionSubtitle {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .forumTopics .topicCard .topicSectionText .sectionParagraph {
+    font-size: 1.75rem;
+  }
+  .forumTopics .topicCard a {
+    font-size: 1.75rem;
+    border-radius: 2rem;
+  }
+}
+
+.contactForm {
+  background-color: #dbe7f5;
+}
+
+.contactForm .contactFields {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contactForm .contactFields input,
+.contactForm .contactFields textarea {
+  padding-left: 0.5rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-family: "Cormorant Garamond", serif;
+  border-radius: 1rem;
+  border: 1px solid #aaaaaa;
+}
+
+.contactForm .contactFields .formButtons {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactForm .contactFields .formButtons button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #f394ca;
+  color: #ffffff;
+}
+
+.contactForm .contactFields .formButtons button:hover {
+  background-color: #ad4881;
+}
+
+@media (min-width: 1024px) {
+  .contactForm {
+    padding: 48px auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "contactFields mediaSquare";
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contactForm .contactFields {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: contactFields;
+  }
+  .contactForm .contactFields input,
+  .contactForm .contactFields textarea,
+  .contactForm .contactFields .termsAndConditions,
+  .contactForm .contactFields .formButtons button {
+    font-size: 2rem;
+    border-radius: 2rem;
+  }
+  .contactForm .contactFields input,
+  .contactForm .contactFields textarea {
+    padding-left: 1rem;
+  }
+  .contactForm .contactFields .termsAndConditions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 1rem;
+  }
+  .contactForm .contactFields .termsAndConditions input {
+    height: 2rem;
+    width: 2rem;
+  }
+  .contactForm .mediaSquare {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: mediaSquare;
+  }
+}
+
+.contactFooter {
+  background-color: #f5dbf3;
+  padding: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contactFooter .storeLocation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.contactFooter .storeLocation .storeMap {
+  width: 100%;
+  height: 30vh;
+}
+
+.contactFooter .socialNetworks {
+  max-width: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 5fr;
+      grid-template-rows: 2fr 5fr;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+      grid-template-areas: "title title title" "facebook twitter instagram";
+  justify-items: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.contactFooter .socialNetworks a {
+  color: #f394ca;
+}
+
+.contactFooter .socialNetworks .SNTitle {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: title;
+}
+
+.contactFooter .socialNetworks i {
+  font-size: 5rem;
+}
+
+.contactFooter .socialNetworks .facebook {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: facebook;
+}
+
+.contactFooter .socialNetworks .facebook:hover {
+  color: #0165e1;
+}
+
+.contactFooter .socialNetworks .twitter {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: twitter;
+}
+
+.contactFooter .socialNetworks .twitter:hover {
+  color: #1d9bf0;
+}
+
+.contactFooter .socialNetworks .instagram {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: instagram;
+}
+
+.contactFooter .socialNetworks .instagram:hover {
+  color: #c13584;
+}
+
+.contactFooter .contactInfo {
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  gap: 0.5rem;
+}
+
+.contactFooter .contactInfo .infoTitle {
+  text-align: center;
+}
+
+.contactFooter .contactInfo .contactPhone,
+.contactFooter .contactInfo .contactWhatsapp,
+.contactFooter .contactInfo .contactEmail {
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .contactFooter {
+    padding: 48px 80px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "storeLocation socialNetworks" "storeLocation contactInfo";
+  }
+  .contactFooter .storeTitle,
+  .contactFooter .SNTitle,
+  .contactFooter .infoTitle {
+    font-size: 2.5rem;
+  }
+  .contactFooter .storeLocation {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: storeLocation;
+  }
+  .contactFooter .storeLocation .storeMap {
+    width: 100%;
+    height: 100%;
+  }
+  .contactFooter .socialNetworks {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: socialNetworks;
+  }
+  .contactFooter .contactInfo {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: contactInfo;
+  }
+  .contactFooter .contactInfo i,
+  .contactFooter .contactInfo p {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

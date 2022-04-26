@@ -1,0 +1,82 @@
+.contactForm {
+	background-color: $formBackground;
+
+	.contactFields {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+
+		input,
+		textarea {
+			padding-left: 0.5rem;
+			line-height: 1.5;
+			font-size: 1rem;
+			font-family: "Cormorant Garamond", serif;
+			border-radius: 1rem;
+			border: 1px solid $boxBorder;
+		}
+
+		.formButtons {
+			margin-top: 1.5rem;
+			display: flex;
+			gap: 1rem;
+			justify-content: center;
+
+			button {
+				padding: 0.5rem 1rem;
+				border: none;
+				border-radius: 1rem;
+				background-color: $buttonBackground;
+				color: $buttonFont;
+
+				&:hover {
+					background-color: $pressedButtonBackground;
+				}
+			}
+		}
+	}
+
+	@media (min-width: 1024px) {
+		padding: 48px auto;
+		grid-template-rows: auto;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "contactFields mediaSquare";
+		justify-content: center;
+
+		.contactFields {
+			grid-area: contactFields;
+			
+			input,
+			textarea,
+			.termsAndConditions,
+			.formButtons button {
+				font-size: 2rem;
+				border-radius: 2rem;
+			}
+
+			input,
+			textarea {
+				padding-left: 1rem;
+			}
+
+			.termsAndConditions {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 1rem;
+				
+				input {
+					height: 2rem;
+					width: 2rem;
+					
+				}
+			}
+		}
+
+		.mediaSquare {
+			grid-area: mediaSquare;
+		}
+	}
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- META TAGS -->
+		<meta
+			name="description"
+			content="Bienvenido a Floristería Nubia, donde encontrarás los mejores materiales y asesoría para tus proyectos de decoración para el hogar. Encuentra aquí todo lo que necesitas para crear tus arreglos: flores artificiales, espuma floral, cristalería, arenas decorativas y gemas. Nuestro personal estará dispuesto a ayudarte!"
+		/>
+		<meta
+			name="keywords"
+			content="Bogotá Colombia flores artificiales cristal jarrón decoración hogar adorno tendencia tienda asesoría videocurso contacto"
+		/>
+
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- BOOTSTRAP ICONS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+		/>
+
+		<!-- FAVICON -->
+		<link
+			rel="shortcut icon"
+			href="./assets/favicon/favicon-16x16.png"
+			type="image/x-icon"
+		/>
+
+		<!-- ANIMATIONS CSS LINK -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+		<!-- MAIN CASCADE STYLE SHEET -->
+		<link rel="stylesheet" href="./css/style.css" />
+
+		<title>Floristería Nubia</title>
+	</head>
+	<body>
+		<section class="wow animate__animated animate__fadeIn homeBanner index">
+			<header>
+				<nav>
+					<input
+						type="radio"
+						class="menuButton"
+						name="headerButton"
+						id="menuButton"
+					/>
+					<label class="menuButtonLabel" for="menuButton"
+						><i class="bi bi-list"></i
+					></label>
+					<div class="menuSection">
+						<div class="searchBox">
+							<input type="text" placeholder="Escribe tu búsqueda aquí" />
+							<i class="bi bi-search"></i>
+						</div>
+						<ul class="menuList">
+							<li><a href="./pages/catalog.html">Catálogo</a></li>
+							<li><a href="./pages/services.html">Servicios</a></li>
+							<li><a href="./pages/courses.html">Cursos</a></li>
+							<li><a href="./pages/forum.html">Foro</a></li>
+						</ul>
+						<input
+							type="radio"
+							class="menuButton"
+							name="headerButton"
+							id="closeButton"
+						/>
+						<label class="closeButtonLabel" for="closeButton"
+							><i class="bi bi-chevron-bar-up"></i
+						></label>
+					</div>
+				</nav>
+				<a href="index.html"
+					><img
+						class="homeLogo"
+						src="./assets/logo/homeLogo.png"
+						alt="companyLogo"
+				/></a>
+				<div class="userOptions">
+					<input
+						type="radio"
+						class="userButton"
+						name="headerButton"
+						id="userButton"
+					/>
+					<label class="userButtonLabel" for="userButton"
+						><i class="bi bi-person-circle"></i
+					></label>
+					<div class="userSection">
+						<img
+							class="userPicture"
+							src="../assets/img/Potrait.jpg"
+							alt="User profile picture"
+						/>
+						<ul class="userList">
+							<li><a href="#">Mi cuenta</a></li>
+							<li><a href="#">Favoritos</a></li>
+							<li><a href="#">Carrito de compras</a></li>
+						</ul>
+						<input
+							type="radio"
+							class="menuButton"
+							name="headerButton"
+							id="closeButton"
+						/>
+						<label class="closeButtonLabel" for="closeButton"
+							><i class="bi bi-chevron-bar-up"></i
+						></label>
+					</div>
+				</div>
+			</header>
+
+			<div class="bannerTitle">
+				<h1>
+					El distribuidor con las flores artificiales más hermosas de Colombia
+				</h1>
+			</div>
+		</section>
+
+		<section class="catalogSection">
+			<h2 class="sectionTitle wow animate__animated animate__fadeInUp">
+				Encuentra lo que estabas buscando para decorar
+			</h2>
+			<div class="popularTags wow animate__animated animate__fadeIn">
+				<p>Estas son nuestras categorías más populares</p>
+				<div class="tags">
+					<a href="./pages/catalog.html">Flores</a>
+					<a href="./pages/catalog.html">Cristalería</a>
+					<a href="./pages/catalog.html">Insumos</a>
+				</div>
+			</div>
+			<div class="homeProducts">
+				<div class="productCard wow animate__animated animate__fadeInLeft">
+					<img src="./assets/products/Product_1.jpg" alt="Artificial violet roses" />
+					<h3 class="productTitle">Ramo de rosas artificiales color violeta</h3>
+					<i class="productFavourites bi bi-heart"></i>
+					<h3 class="productPrice">COP$7.500,00</h3>
+					<!-- <p class="productDescription">
+                Ramo de flores artificiales de imitación de seda - 7 tenedores, 14 unidades, 30 cm, decoración del hogar. Diámetro aproximado de cada flor: 4,2cm. El paquete incluye: 1 pieza x rosa persa (alrededor de 14
+                unidades, sin base)
+            </p> -->
+					<div class="productCalification">
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-fill"></i>
+					</div>
+					<i class="productCart bi bi-cart-plus"></i>
+				</div>
+				<div class="productCard wow animate__animated animate__fadeIn">
+					<img src="./assets/products/Product_2.jpg" alt="Spherical glass container" />
+					<h3 class="productTitle">Bombonera transparente</h3>
+					<i class="productFavourites bi bi-heart"></i>
+					<h3 class="productPrice">COP$5.000,00</h3>
+					<!-- <p class="productDescription">
+            Recipiente esférico en vidrio - Útil para decoraciones de mesa con arenas o arreglos florales. Técnica de elaboración artesanal por medio de soplado. Dimensiones: 7.9cm x 7.9cm x 8cm
+          </p> -->
+					<div class="productCalification">
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-fill"></i>
+					</div>
+					<i class="productCart bi bi-cart-plus"></i>
+				</div>
+				<div class="productCard wow animate__animated animate__fadeInRight">
+					<img src="./assets/products/Product_3.jpg" alt="Artificial silk peonies" />
+					<h3 class="productTitle">Peonías artificiales en seda</h3>
+					<i class="productFavourites bi bi-heart"></i>
+					<h3 class="productPrice">COP$12.000,00</h3>
+					<!-- <p class="productDescription">
+                Peonías pequeñas para bouquet - Hermosas flores para la decoración del hogar o para fiestas, son muy útiles para crear pines pequeños y complementos para atuendos y vestidos ocasionales. El paquete incluye: 1 racimo de peonías con 5 unidades. Diámetro: 6cm por unidad.
+            </p> -->
+					<div class="productCalification">
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-fill"></i>
+						<i class="bi bi-star-fill"></i>
+					</div>
+					<i class="productCart bi bi-cart-plus"></i>
+				</div>
+			</div>
+			<a class="wow animate__animated animate__pulse" href="./pages/catalog.html">Catálogo completo</a>
+		</section>
+
+		<section class="ourCourses">
+			<h2 class="sectionTitle wow animate__animated animate__fadeIn">
+				Aprende sobre floristería y decoración con nosotros
+			</h2>
+			<iframe
+				title="Floral arrangement course" 
+				class="mediaLandscape wow animate__animated animate__fadeInLeft"
+				src="https://www.youtube.com/embed/VQWg7zkEq9o"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+			<div class="mediaSectionText wow animate__animated animate__fadeInRight">
+				<h3 class="mediaTitle">Videocursos para todos y para todo.</h3>
+				<h4 class="mediaSubtitle">Incursiona con nostros en la floristería</h4>
+				<p class="mediaParagraph">
+					Conoce a nuestros instructores y acompáñanos en la exploración de la
+					decoración floral, aprenderás la teoría fundamental para realizar tus
+					proyectos, el uso de las herramientas más utilizadas y las estrategias
+					principales para iniciarte en este mundo. Demostrarás tu aprendizaje
+					en cada nivel por medio de actividades en las que nuestra comunidad
+					estará para apoyarte y animarte.
+				</p>
+			</div>
+			<a href="./pages/courses.html" class="Button wow animate__animated animate__pulse">Conocer más</a>
+		</section>
+
+		<section class="ourCompany">
+			<h2 class="sectionTitle wow animate__animated animate__fadeIn">¡Somos el mejor aliado de tu creatividad!</h2>
+			<img
+				class="mediaLandscape wow animate__animated animate__fadeInLeft"
+				src="./assets/img/Nuestra_empresa.jpg"
+				alt="Image for our company"
+			/>
+			<div class="mediaSectionText wow animate__animated animate__fadeInRight">
+				<h3 class="mediaTitle">Nuestra empresa</h3>
+				<h4 class="mediaSubtitle">Taller de los sueños</h4>
+				<p class="mediaParagraph">
+					Cada integrante de nuestro equipo de trabajo ama lo que hace y
+					participa de esta comunidad agregando valor y conocimiento. Nuestros
+					colaboradores, con más de 30 años de experiencia, cuentan con una
+					larga trayectoria en este campo y tienen gran disposición para llevar
+					a cabo tus proyectos, o para mostrarte como lograrlo por cuenta
+					propia. El sueño de nuestra empresa es crecer y convertirse en una
+					comunidad internacional de aprendizaje y apoyo, además de un referente
+					en distribución de materiales e insumos para la decoración floral.
+				</p>
+			</div>
+			<a href="./pages/services.html" class="Button wow animate__animated animate__pulse">Conocer más</a>
+		</section>
+
+		<section class="contactForm">
+			<img
+				class="mediaSquare wow animate__animated animate__fadeIn"
+				src="./assets/img/MOV_contactFormImage.jpeg"
+				alt="image for contact form"
+			/>
+			<form class="contactFields wow animate__animated animate__fadeInLeft" action="#">
+				<h2 class="sectionTitle">¿Tienes dudas? Escríbenos</h2>
+				<input type="text" placeholder="Escribe tu nombre" required />
+				<input
+					type="email"
+					name="customerEmail"
+					id="customerEmail"
+					placeholder="Escribe tu correo electrónico"
+					required
+				/>
+				<textarea
+					name="customerMessage"
+					id="customerMessage"
+					cols="30"
+					rows="10"
+					placeholder="Escribe tus dudas, comentarios o propuestas, un asesor se comunicará contigo lo antes posible."
+					required
+				></textarea>
+				<div class="termsAndConditions">
+					<input
+						type="checkbox"
+						name="termsAndConditions"
+						id="termsAndConditions"
+						required
+					/>
+					<label for="termsAndConditions">Acepto términos y condiciones</label>
+				</div>
+				<div class="formButtons">
+					<button type="submit" class="formBtn">Enviar</button>
+					<button type="reset" class="formBtn">Borrar</button>
+				</div>
+			</form>
+		</section>
+
+		<footer class="contactFooter">
+			<div class="storeLocation">
+				<h3 class="storeTitle">Visita nuestra tienda</h3>
+				<iframe
+					title="Flowershop location" 
+					class="storeMap"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.0495159596812!2d-74.1045485846971!3d4.585134496668895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f98dfab1caac9%3A0xb999a9e45c6b412f!2sRestrepo%20Market%20Plaza!5e0!3m2!1sen!2sco!4v1650506210990!5m2!1sen!2sco"
+					style="border: 0"
+					allowfullscreen=""
+					loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"
+				></iframe>
+			</div>
+
+			<div class="socialNetworks">
+				<h3 class="SNTitle">Encuéntranos en redes sociales</h3>
+				<a href="https://www.facebook.com/" target="blank" class="facebook"
+					><i class="bi bi-facebook"></i
+				></a>
+				<a href="https://twitter.com/" target="blank" class="twitter"
+					><i class="bi bi-twitter"></i
+				></a>
+				<a href="https://www.instagram.com/" target="blank" class="instagram"
+					><i class="bi bi-instagram"></i
+				></a>
+			</div>
+
+			<div class="contactInfo">
+				<h3 class="infoTitle">Contacta con un asesor</h3>
+				<div class="contactPhone">
+					<i class="bi bi-telephone"></i>
+					<p>+57 1 987 6543</p>
+				</div>
+				<div class="contactWhatsapp">
+					<i class="bi bi-whatsapp"></i>
+					<p>+57 321 987 6543</p>
+				</div>
+				<div class="contactEmail">
+					<i class="bi bi-envelope"></i>
+					<p>atencion@floresnub.com.co</p>
+				</div>
+			</div>
+		</footer>
+
+		<section class="credits">
+			<p>Copyright 2022, Todos los derechos reservados, Carlos Terán</p>
+		</section>
+		
+		<!-- WOW Scripts -->
+		
+		<script src="./js/wow.min.js"></script>
+		<script> 
+        	new WOW().init();
+		</script>
+
+	</body>
+</html>

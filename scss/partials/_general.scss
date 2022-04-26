@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.credits {
+	height: 3rem;
+	display: flex;
+	background-color: $pressedButtonBackground;
+
+	p {
+		margin: auto;
+		font-size: 0.75rem;
+		color: $buttonFont;
+	}
+}

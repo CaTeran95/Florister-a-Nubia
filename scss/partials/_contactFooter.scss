@@ -1,0 +1,120 @@
+@mixin networks($name, $color) {
+	.#{$name} {
+		grid-area: $name;
+
+		&:hover {
+			color: $color;
+		}
+	}
+}
+
+.contactFooter {
+	background-color: #f5dbf3;
+	padding: 10vw;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	justify-content: flex-end;
+
+	.storeLocation {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+
+		.storeMap {
+			width: 100%;
+			height: 30vh;
+		}
+	}
+
+	.socialNetworks {
+		max-width: 500px;
+		display: grid;
+		grid-template-rows: 2fr 5fr;
+		grid-template-columns: repeat(3, auto);
+		grid-template-areas:
+			"title title title"
+			"facebook twitter instagram";
+		justify-items: center;
+		justify-self: center;
+
+		a {
+			color: $buttonBackground;
+		}
+
+		.SNTitle {
+			grid-area: title;
+		}
+
+		i {
+			font-size: 5rem;
+		}
+
+		@each $network, $color in $networksColors {
+			@include networks($network, $color);
+		}
+	}
+
+	.contactInfo {
+		width: 90%;
+		max-width: 450px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-self: center;
+		gap: 0.5rem;
+
+		.infoTitle {
+			text-align: center;
+		}
+
+		.contactPhone,
+		.contactWhatsapp,
+		.contactEmail {
+			font-size: 1.25rem;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 1rem;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		padding: 48px 80px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas:
+			"storeLocation socialNetworks"
+			"storeLocation contactInfo";
+
+		.storeTitle,
+		.SNTitle,
+		.infoTitle {
+			font-size: 2.5rem;
+		}
+
+		.storeLocation {
+			grid-area: storeLocation;
+
+			.storeMap {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.socialNetworks {
+			grid-area: socialNetworks;
+		}
+
+		.contactInfo {
+			grid-area: contactInfo;
+
+			i,
+			p {
+				font-size: 2rem;
+			}
+		}
+	}
+}

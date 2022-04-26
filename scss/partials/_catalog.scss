@@ -1,0 +1,283 @@
+@mixin areas($name) {
+	.#{$name} {
+		grid-area: $name;
+	}
+}
+
+@mixin pageDynamics($number) {
+	.checkboxPage#{$number}:checked ~ .page#{$number} {
+		display: grid;
+	}
+}
+
+// FILTER SECTION
+
+.catalogFilter {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	position: relative;
+	align-self: flex-end;
+
+	input[type="checkbox"] {
+		display: none;
+	}
+
+	.showButton:checked ~ .lateralList {
+		display: flex;
+	}
+
+	.lateralList {
+		width: 100%;
+		padding: 1rem;
+		display: none;
+		flex-direction: column;
+		gap: 1rem;
+
+		[class$="Filter"] {
+			display: flex;
+			flex-direction: column;
+			gap: 0.75rem;
+		}
+
+		a {
+			all: unset;
+			font-size: 1.15rem;
+		}
+
+		[class*="Category"] {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.hidden {
+			display: none;
+		}
+
+		.seeMore:checked ~ .colors .hidden {
+			display: flex;
+		}
+		.seeMore:checked ~ label {
+			display: none;
+		}
+
+		.inputRange {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+			input {
+				padding-left: 1rem;
+				width: 40%;
+			}
+		}
+	}
+
+	@media (min-width: 1024px) {
+		width: 100%;
+		font-size: 2rem;
+
+		.lateralList {
+			flex-direction: row;
+			justify-content: space-between;
+
+			h3 {
+				font-size: 2.25rem;
+			}
+
+			a, input {
+				font-size: 2rem;
+				border-radius: 2rem;
+			}
+
+			.categoryFilter,
+			.colorFilter,
+			.priceFilter {
+				width: 30%;
+			}
+
+		}
+	}
+}
+
+// END OF FILTER SECTION
+
+.catalogSection {
+	padding: 10vw 5vw;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	justify-content: space-between;
+	align-items: center;
+
+	h2 {
+		text-align: center;
+	}
+
+	.homeProducts {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		.productCard {
+			min-width: MAX(90vw, 320px);
+			padding: 5px;
+			background-color: $cardBackground;
+			border-radius: 8px;
+			display: grid;
+			grid-template-columns: 120px auto 20px;
+			grid-template-rows: 70px 25px 25px;
+			grid-template-areas:
+				"img productTitle productFavourites"
+				"img productPrice productPrice"
+				"img productCalification productCart";
+
+			img {
+				width: 100%;
+				border-radius: 8px;
+			}
+
+			i {
+				font-size: 1.25rem;
+			}
+
+			.productTitle,
+			.productPrice,
+			.productCalification,
+			.productFavourites,
+			.productCart {
+				align-self: flex-start;
+			}
+			
+			.productTitle,
+			.productPrice, 
+			.productCalification {
+				padding: 0 5px;
+			}
+			
+			.productTitle {
+				font-size: 1rem;
+			}
+			
+			.productFavourites {
+				align-self: flex-start;
+			}
+
+			.productCart {
+				justify-self: center;
+			}
+
+			@each $name in img, productTitle, productFavourites, productPrice, productCalification, productCart {
+				@include areas($name);
+			}
+		}
+
+		.checkboxPage1,
+		.checkboxPage2,
+		.checkboxPage3,
+		.checkboxPage4,
+		.checkboxPage5,
+		.checkboxPage6 {
+			display: none;
+		}
+
+		.page1,
+		.page2,
+		.page3,
+		.page4,
+		.page5,
+		.page6 {
+			display: none;
+		}
+
+		@each $number in 1, 2, 3, 4, 5, 6 {
+			@include pageDynamics($number);
+		}
+	}
+
+	.popularTags {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		align-items: center;
+
+		p {
+			text-align: center;
+		}
+	}
+
+	a {
+		padding: 0.5rem 1rem;
+		background-color: $buttonBackground;
+		color: $buttonFont;
+		font-weight: 00;
+		border-radius: 1rem;
+		text-decoration: none;
+
+		&:hover {
+			background-color: $pressedButtonBackground;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		padding: 3rem 5rem;
+
+		.sectionTitle {
+			font-size: 3rem;
+		}
+
+		.popularTags {
+			p {
+				font-size: 2rem;
+			}
+		}
+
+		.homeProducts {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+
+			.productCard {
+				padding: 10px;
+				min-width: auto;
+				width: 30%;
+				max-width: 350px;
+				grid-template-columns: auto 20px;
+				grid-template-rows: repeat(4, auto);
+				grid-template-areas:
+					"img img"
+					"productTitle productFavourites"
+					"productPrice productPrice"
+					"productCalification productCart";
+
+				img {
+					width: 100%;
+				}
+
+				.productTitle,
+				.productFavourites,
+				.productSubtitle,
+				.productPrice,
+				.productCalification,
+				.productCart {
+					margin-top: 1rem;
+					font-size: 1.5rem;
+					line-height: 1;
+				}
+
+				@each $name in img, productTitle, productFavourites, productPrice, productCalification, productCart {
+					@include areas($name);
+				}
+			}
+		}
+
+		a {
+			font-size: 2rem;
+			border-radius: 2rem;
+		}
+
+		.productsPages {
+			font-size: 3rem;
+		}
+	}
+}

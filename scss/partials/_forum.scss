@@ -1,0 +1,83 @@
+.forumTopics {
+	padding: 10vw 5vw;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	.topicCard {
+		padding: 1rem;
+		background-color: $cardBackground;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		align-items: center;
+
+		img {
+			width: 100%;
+			border-radius: 5px;
+		}
+
+		.topicSectionText {
+			.sectionTitle {
+				font-size: 1.5rem;
+				text-align: center;
+			}
+
+			.sectionSubtitle,
+			.sectionParagraph {
+				display: none;
+			}
+		}
+
+		a {
+			padding: 0 1rem;
+			text-decoration: none;
+			line-height: 2;
+			background-color: $buttonBackground;
+			color: $buttonFont;
+			border-radius: 1rem;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		padding: 3rem 5rem;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.topicCard {
+			width: 32%;
+
+			.topicSectionText {
+				display: flex;
+				flex-direction: column;
+				
+				.sectionSubtitle,
+				.sectionParagraph {
+					display: flex;
+					align-self: center;
+					text-align: center;
+				}
+
+				.sectionTitle {
+					font-size: 3rem;
+				}
+
+				.sectionSubtitle {
+					margin-bottom: 1rem;
+					font-size: 2rem;
+				}
+
+				.sectionParagraph {
+					font-size: 1.75rem;
+				}
+			}
+
+			a {
+				font-size: 1.75rem;
+				border-radius: 2rem;
+			}
+		}
+	}
+}
