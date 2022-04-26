@@ -310,16 +310,16 @@ body {
     background-image: url(https://CaTeran95.github.io/Florister-a-Nubia/assets/img/homeBackground.jpg);
   }
   .homeBanner.catalog {
-    background-image: url(https://CaTeran95.github.io/Florister-a-Nubia//assets/img/catalogBackground.jpg);
+    background-image: url(https://CaTeran95.github.io/Florister-a-Nubia/assets/img/catalogBackground.jpg);
   }
   .homeBanner.courses {
-    background-image: url(https://CaTeran95.github.io/Florister-a-Nubia//assets/img/coursesBackground.jpg);
+    background-image: url(https://CaTeran95.github.io/Florister-a-Nubia/assets/img/coursesBackground.jpg);
   }
   .homeBanner.services {
-    background-image: url(https://CaTeran95.github.io/Florister-a-Nubia//assets/img/servicesBackground.jpg);
+    background-image: url(https://CaTeran95.github.io/Florister-a-Nubia/assets/img/servicesBackground.jpg);
   }
   .homeBanner.forum {
-    background-image: url(https://CaTeran95.github.io/Florister-a-Nubia//assets/img/forumBackground.jpg);
+    background-image: url(https://CaTeran95.github.io/Florister-a-Nubia/assets/img/forumBackground.jpg);
   }
 }
 
@@ -496,6 +496,10 @@ body {
 .catalogSection .homeProducts .productCard img {
   width: 100%;
   border-radius: 8px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: img;
 }
 
 .catalogSection .homeProducts .productCard i {
@@ -529,13 +533,6 @@ body {
 .catalogSection .homeProducts .productCard .productCart {
   -ms-grid-column-align: center;
       justify-self: center;
-}
-
-.catalogSection .homeProducts .productCard .img {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
-  grid-area: img;
 }
 
 .catalogSection .homeProducts .productCard .productTitle {
@@ -682,6 +679,10 @@ body {
   }
   .catalogSection .homeProducts .productCard img {
     width: 100%;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: img;
   }
   .catalogSection .homeProducts .productCard .productTitle,
   .catalogSection .homeProducts .productCard .productFavourites,
@@ -692,12 +693,6 @@ body {
     margin-top: 1rem;
     font-size: 1.5rem;
     line-height: 1;
-  }
-  .catalogSection .homeProducts .productCard .img {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: img;
   }
   .catalogSection .homeProducts .productCard .productTitle {
     -ms-grid-row: 2;

@@ -135,6 +135,7 @@
 			img {
 				width: 100%;
 				border-radius: 8px;
+				grid-area: img;
 			}
 
 			i {
@@ -167,7 +168,7 @@
 				justify-self: center;
 			}
 
-			@each $name in img, productTitle, productFavourites, productPrice,
+			@each $name in productTitle, productFavourites, productPrice,
 				productCalification, productCart
 			{
 				@include areas($name);
@@ -254,6 +255,7 @@
 
 				img {
 					width: 100%;
+					grid-area: img;
 				}
 
 				.productTitle,
@@ -267,7 +269,7 @@
 					line-height: 1;
 				}
 
-				@each $name in img, productTitle, productFavourites, productPrice,
+				@each $name in productTitle, productFavourites, productPrice,
 					productCalification, productCart
 				{
 					@include areas($name);
