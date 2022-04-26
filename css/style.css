@@ -178,23 +178,23 @@ body {
 }
 
 .homeBanner.index {
-  background-image: url(../assets/img/MOVhomeBackground.jpg);
+  background-image: url(https://CaTeran95.github.io/Florister-a-Nubia//assets/img/MOVhomeBackground.jpg);
 }
 
 .homeBanner.catalog {
-  background-image: url(../assets/img/MOVcatalogBackground.jpg);
+  background-image: url(https://CaTeran95.github.io/Florister-a-Nubia//assets/img/MOVcatalogBackground.jpg);
 }
 
 .homeBanner.courses {
-  background-image: url(../assets/img/MOVcoursesBackground.jpg);
+  background-image: url(https://CaTeran95.github.io/Florister-a-Nubia//assets/img/MOVcoursesBackground.jpg);
 }
 
 .homeBanner.services {
-  background-image: url(../assets/img/MOVservicesBackground.jpg);
+  background-image: url(https://CaTeran95.github.io/Florister-a-Nubia//assets/img/MOVservicesBackground.jpg);
 }
 
 .homeBanner.forum {
-  background-image: url(../assets/img/MOVforumBackground.jpg);
+  background-image: url(https://CaTeran95.github.io/Florister-a-Nubia//assets/img/MOVforumBackground.jpg);
 }
 
 @media (min-width: 1024px) {
@@ -307,19 +307,19 @@ body {
     font-size: 2.5rem;
   }
   .homeBanner.index {
-    background-image: url(https://CaTeran95.github.io/Florister-a-Nubia/assets/img/catalogBackground3.jpg);
+    background-image: url(https://CaTeran95.github.io/Florister-a-Nubia/assets/img/homeBackground.jpg);
   }
   .homeBanner.catalog {
-    background-image: url(../assets/img/catalogBackground3.jpg);
+    background-image: url(https://CaTeran95.github.io/Florister-a-Nubia//assets/img/catalogBackground.jpg);
   }
   .homeBanner.courses {
-    background-image: url(../assets/img/coursesBackground.jpg);
+    background-image: url(https://CaTeran95.github.io/Florister-a-Nubia//assets/img/coursesBackground.jpg);
   }
   .homeBanner.services {
-    background-image: url(../assets/img/servicesBackground.jpg);
+    background-image: url(https://CaTeran95.github.io/Florister-a-Nubia//assets/img/servicesBackground.jpg);
   }
   .homeBanner.forum {
-    background-image: url(../assets/img/forumBackground.jpg);
+    background-image: url(https://CaTeran95.github.io/Florister-a-Nubia//assets/img/forumBackground.jpg);
   }
 }
 
