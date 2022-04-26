@@ -85,7 +85,8 @@
 				font-size: 2.25rem;
 			}
 
-			a, input {
+			a,
+			input {
 				font-size: 2rem;
 				border-radius: 2rem;
 			}
@@ -95,7 +96,6 @@
 			.priceFilter {
 				width: 30%;
 			}
-
 		}
 	}
 }
@@ -148,17 +148,17 @@
 			.productCart {
 				align-self: flex-start;
 			}
-			
+
 			.productTitle,
-			.productPrice, 
+			.productPrice,
 			.productCalification {
 				padding: 0 5px;
 			}
-			
+
 			.productTitle {
 				font-size: 1rem;
 			}
-			
+
 			.productFavourites {
 				align-self: flex-start;
 			}
@@ -167,7 +167,9 @@
 				justify-self: center;
 			}
 
-			@each $name in img, productTitle, productFavourites, productPrice, productCalification, productCart {
+			@each $name in img, productTitle, productFavourites, productPrice,
+				productCalification, productCart
+			{
 				@include areas($name);
 			}
 		}
@@ -265,7 +267,9 @@
 					line-height: 1;
 				}
 
-				@each $name in img, productTitle, productFavourites, productPrice, productCalification, productCart {
+				@each $name in img, productTitle, productFavourites, productPrice,
+					productCalification, productCart
+				{
 					@include areas($name);
 				}
 			}

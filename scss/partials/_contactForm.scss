@@ -46,7 +46,7 @@
 
 		.contactFields {
 			grid-area: contactFields;
-			
+
 			input,
 			textarea,
 			.termsAndConditions,
@@ -66,11 +66,10 @@
 				align-items: center;
 				justify-content: flex-start;
 				gap: 1rem;
-				
+
 				input {
 					height: 2rem;
 					width: 2rem;
-					
 				}
 			}
 		}
